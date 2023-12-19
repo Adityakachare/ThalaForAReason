@@ -60,23 +60,7 @@ body {
     text-shadow: 0 0 20px rgb(251, 255, 0);
 }
 
-/*Tablet View */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        background-image: url('/assets/tthala.jpg');
-    }
-}
 
-/* Mobile View */
-@media screen and (max-width: 480px) {
-    body {
-        background-image: url('/assets/mthala.jpg');
-    }
-
-    .container {
-        margin-top: 250px;
-    }
-}
 
 .vidthala {
     position: fixed;
@@ -107,4 +91,30 @@ body {
     color: white;
     font-size: 24px;
     text-shadow: 0 0 10px rgb(229, 255, 0);
+}
+
+/*Tablet View */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: url('/assets/tthala.jpg');
+    }
+
+    #textOverlay {
+        font-size: 20px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url('/assets/mthala.jpg');
+    }
+
+    .container {
+        margin-top: 250px;
+    }
+
+        #textOverlay {
+            font-size: 20px;
+        }
 }
