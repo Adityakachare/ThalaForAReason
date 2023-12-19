@@ -1,0 +1,117 @@
+body {
+    background-image: url('/assets/thala.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    /* Hide overflow content */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.379);
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    border: 2px solid black;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.703);
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #2b2ee3;
+    border: none;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.5s ease;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.btn:hover {
+    background-color: #0420aa;
+}
+
+.ipthala {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: large;
+}
+
+.hthala {
+    font-family: 'Arvo', serif;
+    text-shadow: 0 0 20px rgb(251, 255, 0);
+}
+
+/* Change Background Image for Tablet View */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: url('/assets/tthala.jpg');
+    }
+}
+
+/* Change Background Image for Mobile View */
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url('/assets/mthala.jpg');
+    }
+
+    .container {
+        margin-top: 250px;
+    }
+}
+
+.vidthala {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+#textOverlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+    /* Set a higher z-index to ensure the text is on top of the video */
+    display: none;
+        font-size: 50px;
+        width:max-content;
+
+}
+
+.overlay-text {
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgb(229, 255, 0);
+
+
+}
